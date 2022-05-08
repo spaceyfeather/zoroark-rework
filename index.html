@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- No libraries have been loaded into this template -->
+  <!-- Don't forget to add resources as needed (e.g. p5 or other libraries, fonts or icons, etc)-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Oswald:wght@300;400;500&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>Zoroark Info</title>
+</head>
+
+<!-- All image titles are satirical - it gives me something fun to do between other things - and all jokes are geared toward my friends who i share my projects with, so they make no sense -->
+
+<body>
+  <div class="page-container">
+
+      <div class="mobile-menu">
+      </div>
+      <nav class="nav-container">
+        <button id="home-button">Home</button>
+        <button id="trivia-button">Trivia</button>
+        <button class="hisui-button" id="form-button">Switch Forms &#9660;</button>
+        <button class="" id="bio-button">Biology</button>
+        <button class="" id="stats-button">Stats</button>
+        <button class="" id="location-button">Locations</button>
+        <button class="" id="moves-button">Moveset</button>
+      </nav>
+
+      <div class="section-container">
+
+        <section class="section active-section" id="home-page">
+          <div class="flex-title">
+          <h1 class=flex-item">All About Zoroark</h1>
+          <img class="flex-item tiny-sprite" src="images/sm-ani-sprite.gif" alt="a bouncing sprite of zoroark" title="he's groovin">
+          </div>
+          <h3>A rework of Zoroark's Bulbapedia and Pok&eacute;mon Database pages</h3>
+          <p>Zoroark (ゾロアーク) is a Dark-type Pok&eacute;mon introduced in Generation V, which includes Pok&eacute;mon Black, White, Black 2, and White 2. It is the second and final evolution of Zorua, evolving at level 30.
+            <br><br>In Hisui, Zoroark has a dual-type Normal/Ghost regional form. This was introduced in Pok&eacute;mon Legends: Arceus. 
+            <br><br>Zorua, Zoroark, and their Hisuian forms all share the signature ability of Illusion. When sent into battle, it will appear as the last pok&eacute;mon in the player's party.
+            <br><br>Along with Zorua, it was the first Generation V Pok&eacute;mon to be revealed to the public on February 10, 2010, with Zoroark appearing as a silhouette. Their Hisuian forms were teased on October 19, 2021 in the form of a found-footage style video. This video was released in full two days later, and a final trailer was released the next week, showing official artwork and information.
+          </p>
+          <h3>Pok&eacute;dex Number</h3>
+          <ul>
+            <li><strong>571</strong> (National)</li>
+            <li><strong>077</strong> (Black/White)</li>
+            <li><strong>152</strong> (Black 2/White 2)</li>
+            <li><strong>125</strong> (X/Y — Mountain Kalos)</li>
+            <li><strong>029</strong> (U.Sun/U.Moon — Alola and Melemele Island)</li>
+            <li><strong>013</strong> (U.Sun/U.Moon — Poni Island)</li>
+            <li><strong>088</strong> (The Isle of Armor)</li>
+            <li><strong>220</strong> (Legends: Arceus)</li>
+          </ul>
+          <br>
+          <div class="carousel-container" id="home-carousel">
+            <div class="button-image-container">
+              <button class="carousel-button" id="back-button">&#10094;</button>
+              <div class="image-container">
+                <img class="carousel-image" src="images/Zoroark_and_Zorua_m13.png" alt="a screenshot of a pokemon movie. zorua is nestled in zoroark's mane" title="long face zorua">
+                <img class="carousel-image" src="images/Zoroark_Illusion_m13.png" alt="a screenshot of a pokemon movie. zoroark is glowing red, with half its body being that of suicune" title="why are all the bulbapedia images so BLURRY">
+                <img class="carousel-image" src="images/Zoroark_Night_Daze_m13.png" alt="a screenshot of a pokemon movie. zoroark is using night daze, enveloped in a cloud of red energy" title="animated night daze is actually so nice">
+                <img class="carousel-image" src="images/Zoroark_Night_Slash_m13.png" alt="a screenshot of a pokemon movie. zoroark is using night slash, its claws glowing red" title="insert sneasler video reference here">
+                <img class="carousel-image" src="images/bw2-night-daze.gif" alt="a gif of pokemon black 2. zoroark is using night daze" title="lunala stole their signature move so i chose the gif with lunatone LOL">
+              </div>
+              <button class="carousel-button" id="forward-button">&#10095;</button>
+            </div>
+            <div class="carousel-caption">
+              <p class="image-caption">
+                Zoroark and Zorua from <em>Zoroark: Master of Illusions</em> (aka M13)
+              </p>
+              <p class="image-caption">
+                Zoroark turning into Suicune with Illusion (M13)
+              </p>
+              <p class="image-caption">
+                Zoroark using Night Daze (M13)
+              </p>
+              <p class="image-caption">
+                Zoroark using Night Slash (M13)
+              </p>
+              <p class="image-caption">
+                Zoroark using Night Daze (Black 2/White 2)
+              </p>
+            </div>
+            <div class="dot-container">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <blockquote class="twitter-tweet tw-align-center" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">Hisuian Zorua and Zoroark on your timeline? Must be an illusion... <a href="https://t.co/7thsfI30cT">pic.twitter.com/7thsfI30cT</a></p>&mdash; Pokémon (@Pokemon) <a href="https://twitter.com/Pokemon/status/1519458922817540097?ref_src=twsrc%5Etfw">April 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+          <div class="flex-container ani-container">
+            <img class="flex-item ani-sprite" src="images/bw-ani-back.gif" alt="the back sprite of zoroark from black/white" title="groovin">
+            <img class="flex-item ani-sprite" src="images/bw-ani-back-s.gif" alt="the back sprite of shiny zoroark from black/white" title="groovin">
+            <img class="flex-item ani-sprite" src="images/bw-ani-front.gif" alt="the front sprite of zoroark from black/white" title="groovin">
+            <img class="flex-item ani-sprite" src="images/bw-ani-front-s.gif" alt="the front sprite of shiny zoroark from black/white" title="groovin">
+          </div>
+          
+          <p class="front-footer">
+            Pok&eacute;mon belongs to Game Freak.
+            <br>Images and most text (trivia, biology) are from Bulbapedia.
+          </p>
+        </section>
+
+        <section class="section" id="trivia-page">
+          <h1>Zoroark - Trivia</h1>
+          <h3>Origin</h3>
+          <p>Zoroark appears to be based on the <em>kitsune</em> of Japanese folklore, a shape-shifting mythical fox that would trick unsuspecting travelers for fun. Its facial markings may draw from <em>Kabuki</em> and <em>Noh</em> theater makeup. It also resembles a werewolf, due to the fact that it is an anthropomorphic canid, like most werewolves.
+            <br><br>
+            Hisuian Zoroark may draw inspiration from vengeful ghosts and revenants. Its coloration may be based on kitsune masks. The red portions on its arms and legs resemble frostbite sores.
+            <br><br>
+            "Zoroark" may be a combination of <em>zorro</em> (Spanish for fox) and <em>dark,</em> 悪 <em>aku</em> (evil), or <em>arch-</em> (prefix for "top" or "chief"). Its name stays consistent throughout languages.
+          </p>
+          <h3>Other Fun Facts</h3>
+          <ul>
+            <li>No other Pokémon has the same type combination as Hisuian Zoroark and its pre-evolution Hisuian Zorua. Hisuian Zorua and Zoroark are also the only Pokémon immune to both of their types.</li>
+            <li>Zoroark was first revealed by Junichi Masuda as a silhouette in the February 7, 2010 edition of Pokémon Sunday. Its full image was later revealed in the March 2010 issue of CoroCoro, alongside its pre-evolved form Zorua.</li>
+            <li>Due to its debut before Generation V in <em>Zoroark: Master of Illusions,</em> it can be seen as a parallel to Lucario, which debuted in Lucario and the Mystery of Mew, prior to the release of Generation IV. Unlike Lucario, however, Zoroark was revealed at the same time as its pre-evolved form.
+            <br>They both share the same names in Japanese and English versions of the game, have the same Gender ratio, are in the Field Egg Group and need 1,059,860 Exp. to reach level 100.</li>
+            <li>Though evolving from Zorua at level 30, pre-release information from CoroCoro suggested it would evolve from Zorua by a method different from known evolution methods. What this method might have been if it was true is unknown.</li>
+            <li>Zoroark and its pre-evolution Zorua are the only non-Mythical Pokémon to have been event-exclusive for a time, prior to the release of Pokémon Black 2 and White 2.</li>
+            <li>Zoroark appears in Pokémon Battle Chess BW Version. Along with Emboar, Zoroark doesn't behave similarly to any traditional piece in chess.</li>
+          </ul>
+          <p>Zoroark and Zorua were designed by Atsuko Nishida, who has designed many other popular pok&eacute;mon:</p>
+          <button class="accordion">Atsuko Nishida Designs</button>
+          <div class="panel">
+            <div class="carousel-container" id="trivia-carousel">
+              <div class="button-image-container">
+                <button class="carousel-button" id="back-button">&#10094;</button>
+                <div class="image-container">
+                  <img class="carousel-image" src="images/nishida/001Bulbasaur.png" alt="Bulbasaur" title="is he the first pokemon? is it rhydon? is it mew? is it arceus?">
+                  <img class="carousel-image" src="images/nishida/004Charmander.png" alt="Charmander" title="how do you give charmander a bath">
+                  <img class="carousel-image" src="images/nishida/005Charmeleon.png" alt="Charmeleon" title="charizard">
+                  <img class="carousel-image" src="images/nishida/006Charizard.png" alt="Charizard" title="leon deserved a different ace i'm just sayin">
+                  <img class="carousel-image" src="images/nishida/006Charizard-Mega_X.png" alt="Charizard X" title="HOW DOES THIS BEAT A GRENINJA?">
+                  <img class="carousel-image" src="images/nishida/007Squirtle.png" alt="Squirtle" title="get the squad">
+                  <img class="carousel-image" src="images/nishida/008Wartortle.png" alt="Wartortle" title="sudden gain of ears">
+                  <img class="carousel-image" src="images/nishida/013Weedle.png" alt="Weedle" title="(patrick star voice) leedle leedle leedle">
+                  <img class="carousel-image" src="images/nishida/014Kakuna.png" alt="Kakuna" title="unlike metapod, kakuna canonically has arms">
+                  <img class="carousel-image" src="images/nishida/015Beedrill.png" alt="Beedrill" title="a yellow jacket landed on my nose in 1st grade and i haven't been the same since">
+                  <img class="carousel-image" src="images/nishida/025Pikachu.png" alt="Pikachu" title="yes, she designed pikachu. we owe her our lives">
+                  <img class="carousel-image" src="images/nishida/026Raichu.png" alt="Raichu" title="RAICHU IS A GOOD POKEMON YOU GUYS ARE JUST MEAN">
+                  <img class="carousel-image" src="images/nishida/026Raichu-Alola.png" alt="A. Raichu" title="brick break on alolan raichu is extremely overpowered">
+                  <img class="carousel-image" src="images/nishida/037Vulpix.png" alt="Vulpix" title="snowy is the dumbest name but i won't argue">
+                  <img class="carousel-image" src="images/nishida/038Ninetales.png" alt="Ninetales" title="so good they made an okami boss from it /j">
+                  <img class="carousel-image" src="images/nishida/043Oddish.png" alt="Oddish" title="real ones remember the 'even or odd' minigame in pokemon channel,&#10;and how you always lose">
+                  <img class="carousel-image" src="images/nishida/044Gloom.png" alt="Gloom" title="someone get this man a napkin">
+                  <img class="carousel-image" src="images/nishida/045Vileplume.png" alt="Vileplume" title="my animal crossing wild world town sucked">
+                  <img class="carousel-image" src="images/nishida/069Bellsprout.png" alt="Bellsprout" title="god of destruction">
+                  <img class="carousel-image" src="images/nishida/070Weepinbell.png" alt="Weepinbell" title="the face of suffering">
+                  <img class="carousel-image" src="images/nishida/071Victreebel.png" alt="Victreebel" title="(HORRIBLE SCREAMING)">
+                  <img class="carousel-image" src="images/nishida/077Ponyta.png" alt="Ponyta" title="takes so long to evolve but so so good">
+                  <img class="carousel-image" src="images/nishida/078Rapidash.png" alt="Rapidash" title="i wish galarian rapidash was a pegasus">
+                  <img class="carousel-image" src="images/nishida/134Vaporeon.png" alt="Vaporeon" title="DO NOT">
+                  <img class="carousel-image" src="images/nishida/147Dratini.png" alt="Dratini" title="just a little mans">
+                  <img class="carousel-image" src="images/nishida/148Dragonair.png" alt="Dragonair" title="the absolute length of this noodle">
+                  <img class="carousel-image" src="images/nishida/196Espeon.png" alt="Espeon" title="hearing espeon's cry makes ME cry from nostalgia">
+                  <img class="carousel-image" src="images/nishida/197Umbreon.png" alt="Umbreon" title="colosseum remakes when :(">
+                  <img class="carousel-image" src="images/nishida/401Kricketot.png" alt="Kricketot" title="everyone knows what the next title is gonna be">
+                  <img class="carousel-image" src="images/nishida/402Kricketune.png" alt="Kricketune" title="DELELEWOOOOOOP">
+                  <img class="carousel-image" src="images/nishida/470Leafeon.png" alt="Leafeon" title="if we bring back seasonal sawsbuck can we also have seasonal leafeon.&#10;or at least a better shiny">
+                  <img class="carousel-image" src="images/nishida/471Glaceon.png" alt="Glaceon" title="irida is may's ancestor.&#10;she used her three pool floaties to make it to hoen">
+                  <img class="carousel-image" src="images/nishida/517Munna.png" alt="Munna" title="team plasma be like (punts you like football)">
+                  <img class="carousel-image" src="images/nishida/518Musharna.png" alt="Musharna" title="these guys actually creep me out idk why">
+                  <img class="carousel-image" src="images/nishida/546Cottonee.png" alt="Cottonee" title="seasonal allergies">
+                  <img class="carousel-image" src="images/nishida/547Whimsicott.png" alt="Whimsicott" title="(uses tailwind) (so long gay bowser)">
+                  <img class="carousel-image" src="images/nishida/548Petilil.png" alt="Petilil" title="get you a pokemon rival who licks nectar off your forehead for science">
+                  <img class="carousel-image" src="images/nishida/549Lilligant.png" alt="Lilligant" title="dancing queen OF DEATH IN ANCIENT TIMES">
+                  <img class="carousel-image" src="images/nishida/572Minccino.png" alt="Minccino" title="swiffer">
+                  <img class="carousel-image" src="images/nishida/573Cinccino.png" alt="Cinccino" title="hair products">
+                  <img class="carousel-image" src="images/nishida/588Karrablast.png" alt="Karrablast" title="i have no joke for this one">
+                  <img class="carousel-image" src="images/nishida/700Sylveon.png" alt="Sylveon" title="TRANS RIGHTS">
+                  <img class="carousel-image" src="images/u-zorua.png" alt="Zorua" title="rumored mint condition maybelliene">
+                  <img class="carousel-image" src="images/h-zorua.png" alt="H. Zorua" title="peppermint baby who seeks rightful revenge from beyond the grave">
+                  <img class="carousel-image" src="images/u-zoroark.png" alt="Zoroark" title="oh hey i recognize him!">
+                  <img class="carousel-image" src="images/h-zoroark.png" alt="H. Zoroark" title="we found gladion's fursona">
+                </div>
+                <button class="carousel-button" id="forward-button">&#10095;</button>
+              </div>
+              <div class="carousel-caption">
+                <p class="image-caption">Bulbasaur</p>
+                <p class="image-caption">Charmander</p>
+                <p class="image-caption">Charmeleon</p>
+                <p class="image-caption">Charizard</p>
+                <p class="image-caption">Mega Charizard X</p>
+                <p class="image-caption">Squirtle</p>
+                <p class="image-caption">Wartortle</p>
+                <p class="image-caption">Weedle</p>
+                <p class="image-caption">Kakuna</p>
+                <p class="image-caption">Beedrill</p>
+                <p class="image-caption">Pikachu</p>
+                <p class="image-caption">Raichu</p>
+                <p class="image-caption">Alolan Raichu</p>
+                <p class="image-caption">Vulpix</p>
+                <p class="image-caption">Ninetales</p>
+                <p class="image-caption">Oddish</p>
+                <p class="image-caption">Gloom</p>
+                <p class="image-caption">Vileplume</p>
+                <p class="image-caption">Bellsprout</p>
+                <p class="image-caption">Weepinbell</p>
+                <p class="image-caption">Victreebel</p>
+                <p class="image-caption">Ponyta</p>
+                <p class="image-caption">Rapidash</p>
+                <p class="image-caption">Vaporeon</p>
+                <p class="image-caption">Dratini</p>
+                <p class="image-caption">Dragonair</p>
+                <p class="image-caption">Espeon</p>
+                <p class="image-caption">Umbreon</p>
+                <p class="image-caption">Kricketot</p>
+                <p class="image-caption">Kricketune</p>
+                <p class="image-caption">Leafeon</p>
+                <p class="image-caption">Glaceon</p>
+                <p class="image-caption">Munna</p>
+                <p class="image-caption">Musharna</p>
+                <p class="image-caption">Cottonee</p>
+                <p class="image-caption">Whimsicott</p>
+                <p class="image-caption">Petilil</p>
+                <p class="image-caption">Lilligant</p>
+                <p class="image-caption">Minccino</p>
+                <p class="image-caption">Cinccino</p>
+                <p class="image-caption">Karrablast</p>
+                <p class="image-caption">Sylveon</p>
+                <p class="image-caption">Zorua</p>
+                <p class="image-caption">Hisuian Zorua</p>
+                <p class="image-caption">Zoroark</p>
+                <p class="image-caption">Hisuian Zoroark</p>
+              </div>
+              <div class="dot-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="unova-bio">
+          <h1>Unovan Zoroark Biology</h1>
+          <div class="flex-container">
+            <div class="flex-item">
+              <h3>The Illusion Fox Pok&eacute;mon</h3>
+              <p>Zoroark is a bipedal, slate gray, fox-like Pokémon with crimson and black accents. It has a pointed snout and ears with red insides. It also has some red rimming its eyes and mouth. Zoroark has a large, red, voluminous mane with black tips, tied into a ponytail, as a teal bangle down its length separates a mass of the mane from the lower portion. It has a black ruff on its upper body, pointed at the shoulders from which its arms extend. Its upper arms are thin, whereas its lower arms, while still slim, are bulkier. The arms have spiky extensions of fur at the elbows, and it has red claws on its hands and feet. Zoroark's eyes are red-rimmed with light blue irises.
+                <br><br>In its shiny form, all red accents turn to purple, while the black gains a reddish tint. The bangle and irises turn yellow.
+              </p>
+            </div>
+            <img class="flex-item single-img u-color" src="images/u-zoroark.png">
+          </div>
+          <p>  
+            Zoroark can create illusions that are indistinguishable from reality, deluding many people simultaneously. It can even create illusory landscapes in the forests where it dwells, to hide its territory and protect its den. However, Zoroark is incapable of physically changing itself into another form; it is merely capable of casting illusions. When a Zoroark takes the form of a human, it is capable of human speech. It can make convincing illusions of attacks, and these illusions are extremely realistic, enough to fool even cameras and make one believe they're being physically affected, though the illusion does not have any direct physical effect. Lonely Trainers tend to use Zoroark to create illusions in order to ease their own burden of solitude.
+            <br><br>
+            Zoroark lives in groups, where unity is strong. It is extremely protective of those it cares about and will go to any lengths to keep them safe, including risking its own life, and it can hold grudges on those who harm its loved ones. Zoroark will hide its Zorua young in its mane to protect them and carry them around. There are stories that say Zoroark punishes those who attempt to catch it by trapping them in an illusion. Night Daze is its former signature move.
+          </p>
+        </section>
+
+        <section class="section" id="hisui-bio">
+          <h1>Hisuian Zoroark Biology</h1>
+          <div class="flex-container">
+            <div class="flex-item">
+              <h3>The Baneful Fox Pok&eacute;mon</h3>
+              <p>In the Hisui region, Zoroark takes on a drastic ghostly appearance due to dying from the harsh conditions and being reborn through spite. Its main body color is now disheveled with light gray with red and white accents. Hisuian Zoroark's head and face are similar to its Unova counterpart but colored gray. It has gray ears with black insides and two white markings on both sides of the face. The ears also have light red split parts. The long mane has changed into a longer mane that is colored white with the ends of each tips being colored light and dark red, while covering the right side of Zoroark's face. The arms and legs have several red spots and light red fur that dangles around. The claws and toes of Zoroark are colored black. The eyes are now red with yellow sclera.
+                <br><br>In its shiny form, all red accents are turned purple.
+              </p>
+            </div>
+           <img class="flex-item single-img h-color" src="images/h-zoroark.png">
+          </div>
+          <p>As a result of its apearance, Hisuian Zoroark was said to resemble an embodiment of death. The illusions channeled through Hisuian Zoroark's long withering fur are full of spite. Uniquely, this spiteful illusion can cause physical harm to its opponent on both the inside and outside. This power comes from the hatred it has for every living thing in the world. Hisuian Zoroark's illusion malice is powerful enough to drive anyone who sees it to insanity due to their terror. Hisuian Zoroark recklessly attacks its foes or nemeses, to the point its own bitter energy can cause physical harm onto itself. Despite its extremely hostile and aggressive nature to everything, Hisuian Zoroark can be compassionate to those it cares about, however, such as Hisuian Zorua, and it will become an invaluable ally once someone earns its trust. Hisuian Zoroark prefers to reside in the cold areas where it lingers onto. Like its Unova counterpart, Hisuian Zoroark can make its illusion of humans talking, to the point of easily fooling anyone in order to get food.
+            <br><br>
+            Hisuian Zoroark and Zorua are the only known Pokémon capable of learning the move Bitter Malice.
+          </p>
+        </section>
+
+        <section class="section" id="unova-stats">
+          <h1>Unovan Zoroark Stats</h1>
+          <table>
+            <tr>
+              <th>Type</th>
+              <th>Height</th>
+              <th>Weight</th>
+              <th>Color</th>
+            </tr>
+            <tr>
+              <td>Dark</td>
+              <td>5'03" &#8212; 1.6m</td>
+              <td>178.8 lbs &#8212; 81.1 kg</td>
+              <td>Gray</td>
+            </tr>
+            <tr>
+              <th>Ability</th>
+              <th>Gender ratio</th>
+              <th>Egg Group</th>
+              <th>Base Friendship</th>
+            </tr>
+            <tr>
+              <td>Illusion</td>
+              <td>87.5% M, 12.5% F</td>
+              <td>Field</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <th>Catch Rate</th>
+              <th>Base EXP Yield</th>
+              <th>Level Rate</th>
+              <th>EV Yield</th>
+            </tr>
+            <tr>
+              <td>45 (11.9%)</td>
+              <td>179</td>
+              <td>Medium Slow</td>
+              <td> 2 Sp. Atk.</td>
+            </tr>
+          </table>
+          <button class="accordion">Pok&eacute;dex Entries</button>
+          <div class="panel">
+            <table>
+              <tr>
+                <th>Game(s)</th>
+                <th>Entry</th>
+              </tr>
+              <tr>
+                <td>Black, Y, Alpha Sapphire</td>
+                <td>Bonds between these Pokémon are very strong. It protects the safety of its pack by tricking its opponents.</td>
+              </tr>
+              <tr>
+                <td>White, X, Omega Ruby</td>
+                <td>Each has the ability to fool a large group of people simultaneously. They protect their lair with illusory scenery.</td>
+              </tr>
+              <tr>
+                <td>Black 2, White 2</td>
+                <td>Stories say those who tried to catch Zoroark were trapped in an illusion and punished.</td>
+              </tr>
+              <tr>
+                <td>Ultra Sun</td>
+                <td>It doesn't just transform itself—it also has the power to make hundreds of people see its illusions.</td>
+              </tr>
+              <tr>
+                <td>Ultra Moon</td>
+                <td>If it thinks humans are going to discover its den, Zoroark shows them visions that make them wander around in the woods.</td>
+              </tr>
+              <tr>
+                <td>Sword</td>
+                <td>This Pokémon cares deeply about others of its kind, and it will conjure terrifying illusions to keep its den and pack safe.</td>
+              </tr>
+              <tr>
+                <td>Shield</td>
+                <td>Seeking to ease the burden of solitude, lonely Trainers tell Zoroark to show illusions to them.</td>
+              </tr>
+            </table>
+          </div>
+
+          <button class="accordion">Type Effectiveness</button>
+          <div class="panel">
+            <table class="type-table">
+              <tr>  
+                <td>Damaged normally by:</td>
+                <td class="types">
+                  <span class="normal">Normal</span> <span class="flying">Flying</span>
+                  <span class="poison">Poison</span> <span class="ground">Ground</span>
+                  <span class="rock">Rock</span> <span class="steel">Steel</span>
+                  <span class="fire">Fire</span> <span class="water">Water</span>
+                  <span class="grass">Grass</span> <span class="electric">Electric</span>
+                  <span class="ice">Ice</span> <span class="dragon">Dragon</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Weak to:</td>
+                <td class="types">
+                  <span class="fighting">Fighting</span> <span class="bug">Bug</span>
+                  <span class="fairy">Fairy</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Immune to:</td>
+                <td class="types">
+                  <span class="psychic">Psychic</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Resistant to:</td>
+                <td class="types">
+                  <span class="ghost">Ghost</span> <span class="dark">Dark</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <button class="accordion">Base Stats</button>
+          <div class="panel">
+            <table class="stat-table u-base">
+              <tr>
+                <td>HP: 60</td>
+                <td><span class="b-hp"></span></td>
+              </tr>
+              <tr>
+                <td>Attack: 105</td>
+                <td><span class="b-at"></span></td>
+              </tr>
+              <tr>
+                <td>Defense: 60</td>
+                <td><span class="b-df"></span></td>
+              </tr>
+              <tr>
+                <td>Sp. Attack: 120</td>
+                <td><span class="b-spat"></span></td>
+              </tr>
+              <tr>
+                <td>Sp. Defense: 60</td>
+                <td><span class="b-spdf"></span></td>
+              </tr>
+              <tr>
+                <td>Speed: 105</td>
+                <td><span class="b-speed"></span></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="b-total">Total: 510</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <section class="section" id="hisui-stats">
+          <h1>Hisuian Zoroark Stats</h1>
+          <table>
+            <tr>
+              <th>Types</th>
+              <th>Height</th>
+              <th>Weight</th>
+              <th>Color</th>
+            </tr>
+            <tr>
+              <td>Ghost/Normal</td>
+              <td>5'03" &#8212; 1.6m</td>
+              <td>160.9 lbs &#8212; 73.0 kg</td>
+              <td>White</td>
+            </tr>
+            <tr>
+              <th>Ability</th>
+              <th>Gender ratio</th>
+              <th>Egg Group</th>
+              <th>Base Friendship</th>
+            </tr>
+            <tr>
+              <td>Illusion</td>
+              <td>87.5% M, 12.5% F</td>
+              <td>Field</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <th>Catch Rate</th>
+              <th>Base EXP Yield</th>
+              <th>Level Rate</th>
+              <th>EV Yield</th>
+            </tr>
+            <tr>
+              <td>45 (11.9%)</td>
+              <td>179</td>
+              <td>Medium Slow</td>
+              <td> 2 Sp. Atk.</td>
+            </tr>
+          </table>
+
+          <button class="accordion">Pok&eacute;dex Entries</button>
+          <div class="panel">
+            <table>
+              <tr>
+                <th>Game</th>
+                <th>Entry</th>
+              </tr>
+              <tr>
+                <td>Legends: Arceus</td>
+                <td>With its disheveled white fur, it looks like an embodiment of death. Heedless of its own safety, Zoroark attacks its nemeses with a bitter energy so intense, it lacerates Zoroark's own body.</td>
+              </tr>
+            </table>
+          </div>
+
+          <button class="accordion">Type Effectiveness</button>
+          <div class="panel">
+            <table class="type-table">
+              <tr>  
+                <td>Damaged normally by:</td>
+                <td class="types">
+                  <span class="flying">Flying</span> <span class="ground">Ground</span>
+                  <span class="rock">Rock</span> <span class="steel">Steel</span>
+                  <span class="fire">Fire</span> <span class="water">Water</span>
+                  <span class="grass">Grass</span> <span class="electric">Electric</span>
+                  <span class="ice">Ice</span> <span class="dragon">Dragon</span>
+                  <span class="psychic">Psychic</span> <span class="fairy">Fairy</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Weak to:</td>
+                <td class="types">
+                  <span class="dark">Dark</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Immune to:</td>
+                <td class="types">
+                  <span class="normal">Normal</span>
+                  <span class="fighting">Fighting</span>
+                  <span class="ghost">Ghost</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Resistant to:</td>
+                <td class="types">
+                  <span class="poison">Poison</span>
+                  <span class="bug">Bug</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <button class="accordion">Base Stats</button>
+          <div class="panel">
+            <table class="stat-table h-base">
+              <tr>
+                <td>HP: 55</td>
+                <td><span class="b-hp"></span></td>
+              </tr>
+              <tr>
+                <td>Attack: 100</td>
+                <td><span class="b-at"></span></td>
+              </tr>
+              <tr>
+                <td>Defense: 60</td>
+                <td><span class="b-df"></span></td>
+              </tr>
+              <tr>
+                <td>Sp. Attack: 125</td>
+                <td><span class="b-spat"></span></td>
+              </tr>
+              <tr>
+                <td>Sp. Defense: 60</td>
+                <td><span class="b-spdf"></span></td>
+              </tr>
+              <tr>
+                <td>Speed: 110</td>
+                <td><span class="b-speed"></span></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="b-total">Total: 510</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <section class="section" id="unova-locations">
+          <h1>Unovan Zoroark Locations</h1>
+          <p>This includes all main-series games that Zoroark can be in.</p>
+          <button class="accordion">Black / White</button>
+          <div class="panel">
+            <p><strong>Lostlorn Forest</strong> (requires Shiny fateful encounter Raikou, Entei, or Suicune)
+              <br><strong>Evolve Zorua</strong> (requires fateful encounter Celebi)
+            </p>
+          </div>
+          <button class="accordion">Black 2 / White 2</button>
+          <div class="panel">
+            <p><strong>Evolve N's Zorua</strong> (Received from Rood in Driftveil City)
+            </p>
+          </div>
+          <button class="accordion">X / Y</button>
+          <div class="panel">
+            <p><strong>Route 20</strong> (5% encounter in red flowers)
+              <br><strong>Pok&eacute;mon Village</strong> (10% encounter in yellow and purple flowers)
+            </p>
+          </div>
+          <button class="accordion">Omega Ruby / Alpha Sapphire</button>
+          <div class="panel">
+            <p><strong>Evolve Zorua</strong> (Route 101, hidden pok&eacute;mon after defeating or capturing Groudon/Kyogre)
+            </p>
+          </div>
+          <button class="accordion">Sun / Moon</button>
+          <div class="panel">
+            <p><strong>Trade</strong>
+            </p>
+          </div>
+          <button class="accordion">Ultra Sun / Ultra Moon</button>
+          <div class="panel">
+            <p><strong>Evolve Zorua</strong> (30% encounter at Trainer's School)
+              <br><strong>Poni Grove</strong> (20% encounter)
+            </p>
+          </div>
+          <button class="accordion">Sword / Shield</button>
+          <div class="panel">
+            <p><strong>Trade</strong> (Version 1.2.0+)
+              <br><strong>Evolve Zorua:</strong></p>
+              <ul>
+                <li>15% random encounter (Forest of Focus, fog)</li>
+                <li>10% visible encounter (Forest of Focus, fog)</li>
+                <li>Forest of Focus wanderer (Fog, southeast of the Berry tree near the Soothing Wetlands border)</li>
+                <li>Fields of Honor wanderer (Cloudy & fog, east of the Armor Station, near a Berry tree)</li>
+                <li>Soothing Wetlands wanderer (Cloudy & fog, in an open area just south of the Forest of Focus border)</li>
+              </ul>
+              <p>
+              <br><strong>In the wild:</strong>
+              <ul>
+                <li>Loop Lagoon wanderer (Cloudy & fog, east of the arch on the central island, south of the den)</li>
+                <li>Insular Sea wanderer (Cloudy, roaming the big island)</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+
+        <section class="section" id="hisui-locations">
+          <h1>Hisuian Zoroark Locations</h1>
+          <p>According to the initial trailer for Pok&eacute;mon Scarlet and Violet, Hisuian Zoroark will be available. However, currently, its only available game is Pok&eacute;mon Legends: Arceus.
+            <br><br>
+            <strong>Evolve Zorua</strong> (Found in the ice caverns of Bonechill Wastes in the Alabaster Icelands)
+            <br><br><strong>Bonechill Wastes</strong> (Alabaster Icelands, rare spawn in the ice caverns)
+            <br><br><strong>Lake Acuity Cavern</strong> (Alpha, only one)
+          </p>
+        </section>
+
+        <section class="section" id="unova-moveset">
+          <h1>Unovan Zoroark Moveset</h1>
+          <p>This is only its Generation VIII moveset - because otherwise the number of tables I'd have to write would make me start crying.</p>
+
+          <button class="accordion">Learnset</button>
+          <div class="panel">
+            <table>
+              <tr>
+                <th>Level</th>
+                <th>Move</th>
+                <th>Category</th>
+                <th>Power</th>
+              </tr>
+              <tr>
+                <td>1/Evo.</td>
+                <td class="dark">Night Slash</td>
+                <td>Physical</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="bug">U-turn</td>
+                <td>Physical</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="normal">Scratch</td>
+                <td>Physical</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="normal">Leer</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="dark">Torment</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="dark">Hone Claws</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td class="normal">Fury Swipes</td>
+                <td>Physical</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td class="normal">Scary Face</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td class="dark">Taunt</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td class="dark">Knock Off</td>
+                <td>Physical</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <td>28</td>
+                <td class="dark">Fake Tears</td>
+                <td>Stats</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>34</td>
+                <td class="psychic">Agility</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>40</td>
+                <td class="psychic">Imprison</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>46</td>
+                <td class="dark">Night Daze</td>
+                <td>Special</td>
+                <td>85</td>
+              </tr>
+              <tr>
+                <td>52</td>
+                <td class="dark">Nasty Plot</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>58</td>
+                <td class="dark">Foul Play</td>
+                <td>Physical</td>
+                <td>95</td>
+              </tr>
+            </table>
+          </div>
+
+          <button class="accordion">By TM/TR</button>
+          <div class="panel">
+            <table>
+              <tr>
+                <th>TM</th>
+                <th>Move</th>
+                <th>Category</th>
+                <th>Power</th>
+              </tr>
+              <tr>
+                <td>TM00</td>
+                <td class="normal">Mega Punch</td>
+                <td>Physical</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>TM01</td>
+                <td class="normal">Mega Kick</td>
+                <td>Physical</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td>TM08</td>
+                <td class="normal">Hyper Beam</td>
+                <td>Special</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>TM09</td>
+                <td class="normal">Giga Impact</td>
+                <td>Physical</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>TM15</td>
+                <td class="ground">Dig</td>
+                <td>Physical</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>TM21</td>
+                <td class="psychic">Rest</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TM23</td>
+                <td class="dark">Thief</td>
+                <td>Physical</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>TM24</td>
+                <td class="normal">Snore</td>
+                <td>Special</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>TM25</td>
+                <td class="normal">Protect</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TM26</td>
+                <td class="normal">Scary Face</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TM31</td>
+                <td class="normal">Attract</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TM33</td>
+                <td class="water">Rain Dance</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TM34</td>
+                <td class="fire">Sunny Day</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TM39</td>
+                <td class="normal">Facade</td>
+                <td>Physical</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>TM40</td>
+                <td class="normal">Swift</td>
+                <td>Special</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>TM42</td>
+                <td class="fighting">Revenge</td>
+                <td>Physical</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>TM44</td>
+                <td class="psychic">Imprison</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TM47</td>
+                <td class="dark">Fake Tears</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TM52</td>
+                <td class="flying">Bounce</td>
+                <td>Physical</td>
+                <td>85</td>
+              </tr>
+              <tr>
+                <td>TM56</td>
+                <td class="bug">U-turn</td>
+                <td>Physical</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>TM57</td>
+                <td class="dark">Payback</td>
+                <td>Physical</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>TM58</td>
+                <td class="dark">Assurance</td>
+                <td>Physical</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>TM59</td>
+                <td class="dark">Fling</td>
+                <td>Physical</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TM65</td>
+                <td class="ghost">Shadow Claw</td>
+                <td>Physical</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>TM75</td>
+                <td class="fighting">Low Sweep</td>
+                <td>Physical</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <td>TM76</td>
+                <td class="normal">Round</td>
+                <td>Special</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>TM77</td>
+                <td class="ghost">Hex</td>
+                <td>Special</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <td>TM79</td>
+                <td class="normal">Retaliate</td>
+                <td>Physical</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>TM85</td>
+                <td class="dark">Snarl</td>
+                <td>Special</td>
+                <td>55</td>
+              </tr>
+              <tr>
+                <td>TR00</td>
+                <td class="normal">Swords Dance</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TR02</td>
+                <td class="fire">Flamethrower</td>
+                <td>Special</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>TR07</td>
+                <td class="fighting">Low Kick</td>
+                <td>Physical</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TR12</td>
+                <td class="psychic">Agility</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TR20</td>
+                <td class="normal">Substitute</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TR22</td>
+                <td class="poison">Sludge Bomb</td>
+                <td>Special</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>TR26</td>
+                <td class="normal">Endure</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TR27</td>
+                <td class="normal">Sleep Talk</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TR30</td>
+                <td class="normal">Encore</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TR33</td>
+                <td class="ghost">Shadow Ball</td>
+                <td>Special</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>TR35</td>
+                <td class="normal">Uproar</td>
+                <td>Special</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>TR37</td>
+                <td class="dark">Taunt</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TR38</td>
+                <td class="psychic">Trick</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TR42</td>
+                <td class="normal">Hyper Voice</td>
+                <td>Special</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>TR49</td>
+                <td class="psychic">Calm Mind</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TR58</td>
+                <td class="dark">Dark Pulse</td>
+                <td>Special</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>TR64</td>
+                <td class="fighting">Focus Blast</td>
+                <td>Special</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td>TR68</td>
+                <td class="dark">Nasty Plot</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TR77</td>
+                <td class="grass">Grass Knot</td>
+                <td>Special</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>TR81</td>
+                <td class="dark">Foul Play</td>
+                <td>Physical</td>
+                <td>95</td>
+              </tr>
+              <tr>
+                <td>TR95</td>
+                <td class="dark">Throat Chop</td>
+                <td>Physical</td>
+                <td>80</td>
+              </tr>
+            </table>
+          </div>
+
+          <button class="accordion">By Breeding</button>
+          <div class="panel">
+            <table>
+                <tr>
+                  <th>Parent</th>
+                  <th>Move</th>
+                  <th>Category</th>
+                  <th>Power</th>
+                </tr>
+                <tr>
+                  <td>Eevee line, Lucario, Wooloo line</td>
+                    <td class="normal">Copycat</td>
+                    <td>Status</td>
+                    <td>&#8212;</td>
+                </tr>
+                <tr>
+                  <td>Galarian Zigzagoon line, Lucario, Midnight/Dusk Lycanroc,
+                  <br>Mudbray line, Scorbunny line, Skwovet line</td>
+                  <td class="fighting">Counter</td>
+                  <td>Physical</td>
+                  <td>&#8212;</td>
+                </tr>
+                <tr>
+                  <td>Galarian Farfetch'd line, Torchic line, Absol,
+                  <br>Lucario, Mienfoo line</td>
+                  <td class="fighting">Detect</td>
+                  <td>Status</td>
+                  <td>&#8212;</td>
+                </tr>
+                <tr>
+                  <td>Vulpix line (both forms), Nuzleaf, Shiftry</td>
+                  <td class="psychic">Extrasensory</td>
+                  <td>Special</td>
+                  <td>80</td>
+                </tr>
+                <tr>
+                  <td>Stunky line</td>
+                  <td class="dark">Memento</td>
+                  <td>Status</td>
+                  <td>&#8212;</td>
+                </tr>
+                <tr>
+                  <td>Diglett line (both forms), Seedot line, Mawile,
+                    <br>Absol, Stunky line, Purrloin line, Male Meowstic,
+                    <br>Midday/Dusk Lycanroc, Sobble line, Nickit line</td>
+                  <td class="dark">Sucker Punch</td>
+                  <td>Physical</td>
+                  <td>70</td>
+                </tr>
+            </table>
+          </div>
+
+          <button class="accordion">By Tutoring</button>
+          <div class="panel">
+            <p>These are from the Isle of Armor Move Tutor.</p>
+            <table>
+              <tr>
+                <th>Move</th>
+                <th>Category</th>
+                <th>Power</th>
+              </tr>
+              <tr>
+                <td class="fire">Burning Jealousy</td>
+                <td>Special</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td class="dark">Lash Out</td>
+                <td>Physical</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td class="bug">Skitter Smack</td>
+                <td>Physical</td>
+                <td>70</td>
+              </tr>
+            </table>
+          </div>
+
+          <button class="accordion">By Transfer from another Generation</button>
+          <div class="panel">
+            <table>
+              <tr>
+                <th>Gen</th>
+                <th>Move</th>
+                <th>Category</th>
+                <th>Power</th>
+                <th>Usable</th>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="flying">Aerial Ace</td>
+                <td>Physical</td>
+                <td>60</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="normal">Captivate</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>VI, VII</td>
+                <td class="normal">Confide</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="normal">Covet</td>
+                <td>Physical</td>
+                <td>60</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>V, VI</td>
+                <td class="normal">Cut</td>
+                <td>Physical</td>
+                <td>50</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="normal">Double Team</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="dark">Embargo</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="dark">Feint Attack</td>
+                <td>Physical</td>
+                <td>60</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="normal">Frustration</td>
+                <td>Physical</td>
+                <td>&#8212;</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="normal">Hidden Power</td>
+                <td>Special</td>
+                <td>60</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>V, VI</td>
+                <td class="fire">Incinerate</td>
+                <td>Special</td>
+                <td>60</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>VII</td>
+                <td class="normal">Laser Focus</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="normal">Psych Up</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="dark">Punishment</td>
+                <td>Physical</td>
+                <td>&#8212;</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="dark">Pursuit</td>
+                <td>Physical</td>
+                <td>40</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="normal">Return</td>
+                <td>Physical</td>
+                <td>&#8212;</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="normal">Roar</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>V, VI</td>
+                <td class="fighting">Rock Smash</td>
+                <td>Physical</td>
+                <td>40</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>VI</td>
+                <td class="normal">Secret Power</td>
+                <td>Physical</td>
+                <td>70</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="dark">Snatch</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="ghost">Spite</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="normal">Swagger</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>V, VI, VII</td>
+                <td class="poison">Toxic</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+                <td>Yes</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <section class="section" id="hisui-moveset">
+          <h1>Hisuian Zoroark Moveset</h1>
+          <button class="accordion">Learnset</button>
+          <div class="panel">
+            <table>
+              <tr>
+                <th>Level</th>
+                <th>Mastery</th>
+                <th>Move</th>
+                <th>Category</th>
+                <th>Power</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>10</td>
+                <td class="ghost">Shadow Sneak</td>
+                <td>Physical</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>15</td>
+                <td class="dark">Snarl</td>
+                <td>Special</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>20</td>
+                <td class="normal">Swift</td>
+                <td>Special</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>28</td>
+                <td class="ghost">Bitter Malice</td>
+                <td>Special</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>35</td>
+                <td class="normal">Slash</td>
+                <td>Physical</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>34</td>
+                <td>45</td>
+                <td class="ghost">Shadow Claw</td>
+                <td>Physical</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>40</td>
+                <td>51</td>
+                <td class="ghost">Shadow Ball</td>
+                <td>Special</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>43</td>
+                <td>54</td>
+                <td class="dark">Nasty Plot</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td>52</td>
+                <td>64</td>
+                <td class="psychic">Extrasensory</td>
+                <td>Special</td>
+                <td>70</td>
+              </tr>
+            </table>
+          </div>
+
+          <button class="accordion">By Tutor</button>
+          <div class="panel">
+            <table>
+              <tr>
+                <th>Move</th>
+                <th>Category</th>
+                <th>Power</th>
+              </tr>
+              <tr>
+                <td class="fighting">Rock Smash</td>
+                <td>Physical</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td class="flying">Aerial Ace</td>
+                <td>Physical</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td class="normal">Swift</td>
+                <td>Special</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td class="ghost">Ominous Wind</td>
+                <td>Special</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td class="psychic">Calm Mind</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td class="psychic">Rest</td>
+                <td>Status</td>
+                <td>&#8212;</td>
+              </tr>
+              <tr>
+                <td class="ghost">Shadow Claw</td>
+                <td>Physical</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td class="poison">Sludge Bomb</td>
+                <td>Special</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td class="ghost">Shadow Ball</td>
+                <td>Special</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td class="dark">Snarl</td>
+                <td>Special</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td class="normal">Giga Impact</td>
+                <td>Physical</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td class="normal">Hyper Beam</td>
+                <td>Special</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td class="fire">Flamethrower</td>
+                <td>Special</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td class="dark">Dark Pulse</td>
+                <td>Special</td>
+                <td>80</td>
+              </tr>
+            </table>
+          </div>
+
+        </section>
+
+      </div>
+
+  </div>
+
+  <footer>Casey Verbsky 2022</footer>
+
+</body>
+</html>

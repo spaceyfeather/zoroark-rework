@@ -1,0 +1,552 @@
+:root {
+    --color1: #b00b69;
+    /* no escape */
+    --color2: lightgray;
+    --color3: #333333;
+    --color4: #E9356D;
+    --ghost: #916EAE;
+    --psychic: #FF4498;
+    --dark: #665A58;
+    --normal: #E7E7E7;
+    --fighting: #C70000;
+    --flying: #A8D1FF;
+    --poison: #9107BF;
+    --fire: #FF9360;
+    --bug: #C5FF89;
+    --grass: #36C92D;
+    --water: #2F8EF2;
+    --ground: #E5D0AC;
+    --rock: #BAAB98;
+    --steel: #C6CACC;
+    --electric: #FFFA6F;
+    --ice: #C9EEE9;
+    --dragon: #723CFF;
+    --fairy: #FFC1DD;
+}
+/* Thanks to this laptop, colors are hard to judge. It is very likely they are too bright. */
+
+body {
+    background: var(--color3);
+}
+
+.page-container {
+    display: flex;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 10px;
+    border: 2px solid var(--color4);
+    border-radius: 30px 30px;
+    gap: 5px;
+    box-shadow: 0px 0px 10px var(--color1);
+    height: 100%;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+button {
+    background-color: var(--color1);
+    border: none;
+    border-radius: 20px 20px;
+    color: white;
+    padding: 10px 14px;
+    font-size: 12pt;
+    transition: 0.3s;
+    font-family: 'Oswald', sans-serif;
+    flex: 1;
+}
+
+button:hover {
+    background-color: var(--color4);
+}
+
+.hisui-button {
+    background-color: var(--color4);
+}
+.hisui-button:hover {
+    background-color: var(--color1);
+}
+#form-button {
+    border: 2px solid var(--color2);
+    border-radius: 30px;
+}
+
+.section-container {
+    background-color: var(--color2);
+    margin: 1em;
+    padding: 1em;
+    width: 90%;
+    border-radius: 30px 50px 50px 30px;
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section {
+    height: 0;
+    overflow: hidden;
+}
+
+.active-section {
+    height: auto;
+}
+
+h1, h3 {
+    font-family: 'Merienda One', cursive;
+}
+
+p, li, footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding-top: 0;
+}
+
+#trivia-page li {
+    padding: 0.5ch;
+}
+
+.flex-container {
+    display: flex;
+}
+.flex-item {
+    flex: 1;
+    margin: 10px;
+}
+.flex-title {
+    display: flex;
+}
+/* IMAGE STUFF */
+.single-img {
+    max-width: 300px;
+    height: 100%;
+}
+.tiny-sprite {
+    max-width: 32px;
+    max-height: 32px;
+    margin-top: 1.5rem;
+}
+.u-color:hover {
+    content: url(images/u-shiny.png);
+}
+.h-color:hover {
+    content: url(images/h-shiny.png);
+}
+
+/* END IMAGE STUFF */
+
+/* CAROUSEL STUFF */
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+}
+.button-image-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.image-container {
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 5px 5px;
+}
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-caption {
+    margin: 1em auto;
+    margin-top: 0;
+    justify-content: center;
+    overflow: hidden;
+}
+.image-caption {
+    font-family: 'Oswald', sans-serif;
+}
+.carousel-button {
+    max-height: 50px;
+    max-width: 50px;
+    margin-top: 20%;
+}
+.dot-container {
+    display: flex;
+    justify-content: center;
+    margin: 1em auto;
+    margin-top: 0;
+    gap: 10px;
+}
+.dot {
+    flex: 1;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color1);
+    border-radius: 50%;
+}
+.dot:hover {
+    background-color: var(--color4);
+}
+.active-dot {
+    background-color: var(--color4);
+    border: 2px solid var(--color3);
+}
+.active-dot:hover {
+    background-color: var(--color1);
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes literallyNothing {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+#trivia-carousel .button-image-container {
+    gap: 25px;
+}
+#trivia-carousel .image-container {
+    width: 50%;
+    height: 70%;
+}
+#trivia-carousel .carousel-button {
+    margin-top: 30%;
+}
+#trivia-carousel .dot-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#trivia-carousel .dot {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    flex-basis: 9%;
+    max-width: 100px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: small;
+    padding: 5px;
+}
+/* END CAROUSEL STUFF */
+
+.front-footer {
+    text-align: right;
+    font-style: italic;
+    font-size: small;
+}
+
+footer {
+    margin-left: 45%;
+    margin-bottom: 0;
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+    background-color: var(--color2);
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    width: 300px;
+    /*position: relative; */
+    /*position: sticky; */
+    /*bottom: 0; */
+    opacity: 70%;
+}
+
+
+/* ACCORDION STUFF */
+.accordion {
+    width: 100%;
+    margin-top: 1em;
+}
+.accordion:after {
+    content: '\003D';
+    font-family: sans-serf;
+    font-size: 25px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+.panel {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px 10px;
+    border-left: 3px solid var(--color1);
+    border-right: 3px solid var(--color1);
+}
+.active {
+    height: 100%;
+    transition: 1s;
+    padding: 1em;
+}
+/* END ACCORDION STUFF */
+
+@media screen and (max-width: 600px) {
+
+    .flex-container {
+        display: block;
+    }
+
+    .page-container {
+        display: block;
+    }
+
+    .nav-container {
+        transform: translateY(-500px);
+        overflow: hidden;
+        background-color: var(--color3);
+        box-shadow: none;
+        margin: 0;
+        margin-top: -300px;
+        border: none;
+        border-radius: 0px;
+        transition: 2s;
+    }
+    /*
+    .nav-container button {
+       visibility: collapse;
+    }*/
+
+    .section-container {
+        margin: 0;
+        width: auto;
+        border-radius: 5px 5px;
+        box-shadow: none;
+    }
+
+    .mobile-menu {
+        background-color: var(--color3);
+        padding: 1em;
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 1;
+    }
+
+    .menu-button {
+        width: 100%;
+    }
+    
+    .responsive {
+        transform: translateY(75px);
+        transition: 2s;
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 200px;;
+    }
+
+    #trivia-carousel .dot {
+        flex-basis: 20%;
+    }
+
+    footer {
+        width: 95%;
+        position: absolute;
+        margin-left: auto;
+        margin-top: 5px;
+
+        bottom: auto;
+    }
+
+    .ani-container {
+        display: flex;
+    }
+    .ani-sprite {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+/* TABLE STUFF */
+table {
+    width: 100%;
+}
+td, th {
+    padding: 0 5px;
+    outline: 1px solid var(--color3);
+    font-family: 'Roboto', sans-serif;
+}
+.ghost {
+    background-color: var(--ghost);
+    color: white;
+}
+.dark {
+    background-color: var(--dark);
+    color: white;
+}
+.psychic {
+    background-color: var(--psychic);
+    color: white;
+}
+.normal {
+    background-color: var(--normal);
+}
+.fighting {
+    background-color: var(--fighting);
+    color: white;
+}
+.flying {
+    background-color: var(--flying);
+}
+.poison {
+    background-color: var(--poison);
+    color: white;
+}
+.fire {
+    background-color: var(--fire);
+}
+.bug {
+    background-color: var(--bug);
+}
+.water {
+    background-color: var(--water);
+    color: white;
+}
+.grass {
+    background-color: var(--grass);
+    color: white;
+}
+.ground {
+    background-color: var(--ground);
+}
+.rock {
+    background-color: var(--rock);
+}
+.steel {
+    background-color: var(--steel);
+}
+.ice {
+    background-color: var(--ice);
+}
+.electric {
+    background-color: var(--electric);
+}
+.dragon {
+    background-color: var(--dragon);
+    color: white;
+}
+.fairy {
+    background-color: var(--fairy);
+}
+
+#unova-stats td, th {
+    padding: 5px;
+}
+#hisui-stats td, th {
+    padding: 5px;
+}
+
+tr:first-of-type th:first-of-type {
+    border-top-left-radius: 10px;
+}
+tr:first-of-type th:last-of-type {
+    border-top-right-radius: 10px;
+}
+tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 10px;
+ }
+tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 10px;
+}
+.type-table, .stat-table tr:first-of-type td:first-of-type {
+    border-top-left-radius: 10px;
+}
+.type-table, .stat-table tr:first-of-type td:last-of-type {
+    border-top-right-radius: 10px;
+}
+.type-table span {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.types {
+    width: 70%;
+}
+.type-table .normal, .steel, .ice, .flying, .poison, .ground, .rock, .steel, .fire, .water, .grass, .electric, .dragon, .fairy, .psychic, .ghost, .fighting, .bug {
+    border: 1px solid var(--color3);
+}
+.stat-table td:last-of-type {
+    width: 80%;
+}
+.stat-table span {
+    display: inline-block;
+    margin-top: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 20px;
+    outline: 1px solid var(--color3);
+}
+.b-total {
+    text-align: center;
+}
+.b-hp {
+    background-color: var(--fighting);
+}
+.b-at {
+    background-color: var(--fire);
+}
+.b-df {
+    background-color: var(--electric);
+}
+.b-spat {
+    background-color: var(--water);
+}
+.b-spdf {
+    background-color: var(--grass);
+}
+.b-speed {
+    background-color: var(--psychic);
+}
+.u-base .b-hp, .b-df, .b-spdf {
+    width: 23.5%;
+}
+.u-base .b-at, .b-speed {
+    width: 41.8%;
+}
+.u-base .b-spat {
+    width: 47%;
+}
+.h-base .b-hp {
+    width: 21.6%;
+}
+.h-base .b-at {
+    width: 39%;
+}
+.h-base .b-df, .b-spdf {
+    width: 23.5%;
+}
+.h-base .b-spat {
+    width: 49%;
+}
+.h-base .b-speed {
+    width: 43%;
+}
